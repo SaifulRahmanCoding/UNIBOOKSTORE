@@ -1,0 +1,102 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	/*height: 1000px;*/
+}
+.container{
+	max-width: 1200px;
+	margin: auto;
+}
+.container-admin{
+	max-width: 1000px;
+	margin: auto;
+}
+.container-form{
+	max-width: 700px;
+	margin: auto;
+}
+
+/*top header dan navbar*/
+#top-header, .navbar{
+	z-index: 999;
+}
+.navbar li a{
+	margin-right: 10px;
+}
+.navbar{
+	box-shadow: 0px 2px 4px -2px #C9C8C8;
+}
+nav ul li .active{
+	box-shadow: 0px 4px 0px -2px #007bff;
+}
+
+/*pencarian*/
+.fitur-cari input{
+	border: none;
+	outline: none;
+	border: none !important ;
+	background-color: #F3F3F3;
+	border-radius: 0;
+	padding: 8px 8px 8px 20px;
+	border-radius: 20px 0px 0px 20px;
+}
+.fitur-cari input:focus{
+	border: none !important;
+}
+.fitur-cari button{
+	border: none;
+	outline: none;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	border-radius: 0px 20px 20px 0px;
+	background-color: #F3F3F3;
+	color: #000;
+}
+
+/*clear*/
+.clear{
+	clear: both;
+}
+
+/*card*/
+.card .harga{
+	float: left;
+}
+.card .beli{
+	float: right;
+}
+
+
+/*admin*/
+
+/*tab-admin*/
+#tab-admin{
+	position: sticky; 
+	top:57px;
+	background-color: white;
+}
+#tab-admin ul{
+	list-style: none;
+	padding: 0;
+}
+#tab-admin ul li a{
+	padding: 10px 10px 10px 10px;
+	width: 100%;
+}
+#tab-admin ul li a:hover{
+	box-shadow: 0px 4px 0px -2px #007bff;
+}
+/*list katalog*/
+#list-katalog{
+	width: 100%;
+	/*height: 1000px;*/
+}
+
+/*form*/
+
+
+/*end admin*/
