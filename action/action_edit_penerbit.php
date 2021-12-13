@@ -11,16 +11,6 @@ else {
 	exit();
 }
 
-$query = "SELECT * FROM penerbit WHERE id_penerbit = '$idPenerbit'";
-$result = mysqli_query($db,$query);
-
-foreach($result as $penerbit){
-	$idPenerbit = $penerbit['id_penerbit'];
-	$nama = $penerbit['nama'];
-	$alamat = $penerbit['alamat'];
-	$kota = $penerbit['kota'];
-	$telepon = $penerbit['telepon'];
-}
 
 //cek terbentuknya variable serta men set variable
 if (isset($_POST['idPenerbit'])) {

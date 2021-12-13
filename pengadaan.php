@@ -24,7 +24,6 @@ require_once('assets\koneksi.php');
 		<div class="container-admin">
 			<div class="pengadaan-judul py-4">
 				<h5 class="text-center text-secondary">Laporan Buku yang harus Segera Dibeli</h5>
-				<p class="text-center text-secondary">Daftar Buku yang Stok-nya Kurang Dari 15</p>
 			</div>
 
 			<!-- tabel -->
@@ -33,25 +32,25 @@ require_once('assets\koneksi.php');
 				<table class="table table-striped table-bordered responsive-utilities text-center">
 					<thead>
 						<tr>
-							<th scope="col">#</th>
 							<th scope="col" style="min-width: 250px;">Nama&nbspBuku</th>
 							<th scope="col" style="min-width: 200px;">Penerbit</th>
+							<th scope="col">Stok</th>
 						</tr>
 					</thead>
 
 					<tbody>
 						<?php
 
-						$query= "SELECT * FROM buku WHERE stok<15 ORDER BY stok ASC";
+						$query= "SELECT nama_buku,penerbit,MIN(stok) AS stok FROM buku";
 						$result=mysqli_query($db, $query);
 										// foreach
 						$i=1;
 						foreach ($result as $buku) {
 							?>
 							<tr>
-								<th scope="row"><?=$i++?></th>
 								<td><?=$buku['nama_buku']?></td>
 								<td><?=$buku['penerbit']?></td>
+								<td><?=$buku['stok']?></td>
 							</tr>
 
 						<? } ?>
