@@ -96,7 +96,13 @@ nav ul li .active{
 	/*height: 1000px;*/
 }
 
-/*form*/
-
-
 /*end admin*/
+
+/*footer*/
+#footer{
+	widht: 100%;
+	background-color: #000;
+}
+#footer a{
+	font-size: 12px;
+}

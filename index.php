@@ -112,6 +112,12 @@ require_once('assets\koneksi.php');
 			</div>
 		</div>
 	</div>
+
+	<div id="footer">
+		<div class="container text-center py-2">
+			<a class="text-decoration-none text-white">Copyright 2021 - Saiful Rahman</a>
+		</div>
+	</div>
 </body>
 <?
 require('assets/config/script.php');
